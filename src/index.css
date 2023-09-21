@@ -6,6 +6,66 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+.App {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 0.16fr 0.8fr;
+}
+
+.content {
+  /*width: 83%;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  gap: 3em;
+
+}
+
+.title {
+  text-align: left;
+  font-weight: normal;
+  color: gray;
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  cursor: pointer;
+}
+@media (max-width: 1308px) {
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr;
+
+  }
+}@media (max-width: 768px) {
+  .App {
+    grid-template-columns: 1fr;
+
+  }
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

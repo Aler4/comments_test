@@ -1,0 +1,46 @@
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+
+  .user-item__name {
+    max-width: 250px;
+    overflow: hidden;
+  }
+
+  .user-item_actions {
+    .actions__badge {
+      color: #fff;
+      width: fit-content;
+      background-color: #17a2b8;
+      padding-right: 0.6em;
+      padding-left: 0.6em;
+      border-radius: 10rem;
+      font-size: 75%;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: baseline;
+      margin-right: 15px;
+    }
+    .actions__delete-btn {
+      color: #dc3545;
+      background-color: transparent;
+      background-image: none;
+      border-color: #dc3545;
+
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(220,53,69,.5);
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: #dc3545;
+        border-color: #dc3545;
+      }
+    }
+  }
+}
