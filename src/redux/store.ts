@@ -8,12 +8,12 @@ import {reducer} from "./reducer";
 const persistConfig = {
     key: 'root',
     storage,
-}
+};
 
-const persistedReducer = persistReducer(persistConfig, reducer)
+const persistedReducer = persistReducer(persistConfig, reducer);
 
 
-export let store = createStore(persistedReducer)
-export let persistor = persistStore(store)
+export let store = createStore(persistedReducer);
+export let persistor = persistStore(store);
 
 
